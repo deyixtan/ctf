@@ -1,12 +1,12 @@
 # Broken Inside
 Category: Forensics
 
-# Description
+## Description
 Elliot got this broken data, seemed to contain some hidden information, possibly related to the havoc he had been investigating. Fixing this could lead him to valuable clues in his pursuit of the rogue group responsible for the chaos in the cyber world.
 
 Flag Format: CHCTF{}
 
-# Write-up
+## Write-up
 **TLDR**:
 - The file header was corrupted, and using the `file` command indicates that it contains generic data without any specific file format or type.
 - Upon performing a hex edit, it was observed that the file has the following trailing bytes: `49 45 4E 44 AE 42 60 82`, which correspond to a PNG file.

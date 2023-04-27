@@ -1,14 +1,14 @@
 # Buried Treasure
 Category: Reversing
 
-# Description
+## Description
 Ready your masts and set sail! Thar be treasure here if we can figure out how to find it.
 
 Follow the map and get the booty — a pirate’s work is never done.
 
 [http://treasure.chal.pwni.ng/](http://treasure.chal.pwni.ng/)
 
-# Write-up
+## Write-up
 **TLDR**:
 - The flag, enclosed within braces, consists of 25 characters. Each character corresponds to a specific JavaScript index file, such as `100.js`.
 - The correct combinations of characters (i.e., the flag) ultimately lead us to the `success.js` file, indicating successful completion.
