@@ -9,7 +9,6 @@ Groot is in dire need of some crucial intel about the Bank of Knowhere, but they
 Author: bl4ckp4r4d1s3
 
 ## Write-up
-**TLDR**:
 - By examining the `/robots.txt` file, it reveals a `/admin` URL used to access and pay for the flag.
 - Payments can be made using using a format like `/index.php?sender=Groot&receiver=Nebula&amount=500`.
 - However, there are checks in place to prevent sending money to oneself, for example, `/index.php?sender=Nebula&receiver=Groot&amount=500`.

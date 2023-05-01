@@ -8,8 +8,9 @@ Remember the flag format!
 
 Flag Format: CHCTF{}
 
+Attachments: [glitches.mp4](attachments/glitches.mp4)
+
 ## Write-up
-**TLDR**:
 - The video displays various frames featuring six colored rectangular blocks.
 - The challenge is associated with the Hexahue Cipher.
 - To decode the message, you can utilize [dCode's Hexahue tool](https://www.dcode.fr/hexahue-cipher).

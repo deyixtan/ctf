@@ -6,8 +6,9 @@ If sound can't travel in a vacuum then how did a microphone pick this up in spac
 
 MD5 (signal.wav) = d6c4e284c970d03cb6aa71acd27b4f4d
 
+Attachments: [signal.wav](attachments/signal.wav)
+
 ## Write-up
-**TLDR**:
 - In the challenge title, the Morse code `.- ... -.-. .. ..` converts to ASCII characters.
 - Open the WAV file in Audacity, somewhere along the audio's spectogram view we see a pattern of big and small rectangles that may resemble morse codes.
 - These shapes appear to be grouped into sets of 8 per group.

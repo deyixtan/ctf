@@ -13,7 +13,6 @@ e = 3412227947038934182478852627564512970725877639428828744897413324202816073614
 Author: SolarDebris
 
 ## Write-up
-**TLDR**:
 - It's an RSA problem that can be solved using [dCode's RSA Cipher tool](https://www.dcode.fr/rsa-cipher).
 
 Flag: `shctf{1_w4n7_thA7_mCnu99E7_5auc3_M0R7Y}`

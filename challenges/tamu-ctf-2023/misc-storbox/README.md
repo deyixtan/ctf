@@ -15,7 +15,6 @@ Location 3: 2925 S Glebe Rd
 Flag format will be the street address with spaces replaced with underscores, for example: `gigem{200_Discovery_Dr}`
 
 ## Write-up
-**TLDR**:
 - After researching all three locations on Google, we discovered that Starbucks is a common coffee shop found in the search results. This aligns with the hint provided in the challenge title.
 - These three locations are in close proximity to each other, forming a triangle-like shape in the region.
 - Additionally, we found a Starbucks cafe located at `950 S George Mason Dr`, which is situated somewhere in the middle of this triangle.

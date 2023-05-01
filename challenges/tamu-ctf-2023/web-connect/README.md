@@ -10,8 +10,9 @@ Note: the flag is located at `/flag.txt`
 
 [http://connect.tamuctf.com/](http://connect.tamuctf.com/)
 
+Attachments: [connect.zip](attachments/connect.zip)
+
 ## Write-up
-**TLDR**:
 - The URL input is inserted into the `command` variable, which contains a Curl command like so `command = "curl -s -D - -o /dev/null " + <url> + " | grep -oP '^HTTP.+[0-9]{3}'"`.
 - The `escape_shell_cmd()` function validates the URL input to prevent command injection vulnerabilities.
 - Luckily, Curl has a `--data-binary` option that allows reading file content and appending it to the request. If the value of `--data-binary` starts with `@` followed by a file path, Curl will read the content of that file.

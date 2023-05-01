@@ -11,7 +11,6 @@ NOTE: flag format for this challenge is `tamuctf{...}`
 [http://blackbox.tamuctf.com](http://blackbox.tamuctf.com)
 
 ## Write-up
-**TLDR**:
 - We observed that the web pages are accessed using the page GET parameter, which suggests the possibility of a file inclusion vulnerability.
 - We discovered the existence of `/robots.txt`, which leaked the presence of a `.git` repository, potentially containing the source code of the web application.
 - This indicates that we can use tools like `git-dumper` to extract the repository.

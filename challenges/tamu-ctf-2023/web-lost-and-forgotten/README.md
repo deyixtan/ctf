@@ -9,7 +9,6 @@ I seem to have forgotten the password to my most recent writeup. I wonder if the
 [http://lost-and-forgotten.tamuctf.com/](http://lost-and-forgotten.tamuctf.com/)
 
 ## Write-up
-**TLDR**:
 - The search functionality is vulnerable to SQL blind injection. By injecting SQL code into the search input, we can retrieve information from the database.
 - Injecting `a' UNION SELECT 1,1,1,1,1,'1';#` reveals a post with title 1, description 1, and so on.
 - We can start to leak information about the database by executing specific SQL queries.

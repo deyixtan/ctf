@@ -9,7 +9,6 @@ The StarCraft III Interplanetary Newbie Championship is almost live and I was as
 Author: Bal
 
 ## Write-up
-**TLDR**:
 - The first input field is used to specify the folder to navigate to, while the second input field is used to specify the file to read within that folder.
 - Cicking the button triggers a POST request to retrieve the contents of the specified file.
 - It is possible to exploit these fields and read arbitrary files by injecting malicious input.

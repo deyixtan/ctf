@@ -16,8 +16,9 @@ NOTE: Changes will no longer be persistent between connections.
 
 [http://migraine.tamuctf.com](http://migraine.tamuctf.com)
 
+Attachments: [migraine.zip](attachments/migraine.zip)
+
 ## Write-up
-**TLDR**:
 - Clicking "Run" triggers the `submitCode()` function, sending a POST request to an endpoint with user code in the `src` body parameter.
 - The backend validates the code using a regex and evaluates it if the checks pass.
 - The challenge involves bypassing the regex and performing Remote Code Execution (RCE) via `eval()`.
