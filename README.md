@@ -1,3 +1,3 @@
 # CTF
 
-Repository containing CTF challenges, tools and write-ups.
+Repository containing CTF challenge write-ups and tools.
