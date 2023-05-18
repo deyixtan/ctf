@@ -26,5 +26,4 @@ Author : **Log_s**
 - Once successfully authenticated on the remote `dev` server, we discovered a `flag.txt` file within `dave`'s home directory.
 - By examining the content of the file, we unveiled the flag.
 
-# get flag
 Flag: `Hero{pl41nt3xt_p4ssw0rd_4nd_s5t1_b1t_much_41nt_1t?}`

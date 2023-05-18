@@ -28,6 +28,7 @@ User user may run the following commands on sudoklu:
 - We opened a second terminal to forward local traffic from port `12345` to the server's port `13337` using the command: `ssh -L 12345:127.0.0.1:13337 user@dyn-01.heroctf.fr -p 10287`.
 - With the local port forwarding established, we could interact with the server's port `13337` through our local port `12345` by opening a third terminal and running: `nc localhost 12345`.
 - By executing these steps, we successfully created a bind shell and established a connection to it. We obtained the flag within the bind shell.
+
 ![](solution/image.png)
 
 Flag: `Hero{ch3ck_f0r_m1sc0nf1gur4t1on5}`
