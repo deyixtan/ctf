@@ -22,7 +22,9 @@ Attachments: [dist.zip](attachments/dist.zip)
 - Since the `database.db` file was provided, it made sense to inspect its contents.
 - We utilized a SQLite viewer, such as [https://inloop.github.io/sqlite-viewer/](https://inloop.github.io/sqlite-viewer/), to quickly examine the file's content.
 - While inspecting the questions, we noticed that the answer to question `42` appeared to be the flag:
+
 ![](solution/image1.png)
+
 - Our objective was to extract the answer for question `42`.
 - Here is the logic for answer verification:
 ```
@@ -35,8 +37,11 @@ correct = True if result != [] else False
 - Since user input isn't validated, we can manipulate our query to return a row if the answer starts with a specific string.
 - To accomplish this, we developed a Python script that systematically brute-forced every printable ASCII character, gradually appending it to our answer whenever the query yielded a result.
 - The script used to leak the flag one character at a time can be found [here](solution/solve.py).
+
 ![](solution/image2.png)
+
 - The improved script without dirty fixes can be found [here](solution/solve2.py).
+
 ![](solution/image3.png)
 
 Flag: `grey{1_c4N7_533}`.

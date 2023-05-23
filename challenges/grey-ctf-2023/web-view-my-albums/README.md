@@ -10,7 +10,9 @@ Attachments: [view-my-albums-dist.zip](attachments/view-my-albums-dist.zip)
 
 ## Write-up
 - Upon accessing the provided URL, we encountered a straightforward web application that allows users to view album details.
+
 ![](solution/image1.png)
+
 - Our attention was drawn to the `prefs` cookie, which contained serialized user preferences.
 - Upon analyzing the codebase, our initial approach involved attempting to exploit a Local File Inclusion (LFI) vulnerability. The line `<h1><?php include("greetings/$prefs->language"); ?></h1>` in `index.php` piqued our interest.
 - This could be achieved by manipulating the `language` attribute within the serialized user `prefs`.
@@ -38,10 +40,14 @@ if (isset($_COOKIE['prefs'])) {
 }
 ```
 - This logic would result in a `var_dump()` of our malicious `Albums(CsvRecordStore)` object, leaking the contents of `db_creds.php`.
+
 ![](solution/image2.png)
+
 - With the leaked `db_creds.php`, we could then provide a malicious `Album(MysqlRecordStore)` object, where `MysqlRecordStore` was initialized with the leaked database credentials and the `flag` table.
 - The subsequent `var_dump()` would reveal the entire contents of the `flag` table, exposing the flag.
+
 ![](solution/image3.png)
+
 - The PHP script to generate both payloads can be found [here](solution/solve.php).
 
 Flag: `grey{l4_mu5iCA_DE_haIry_FroG}`

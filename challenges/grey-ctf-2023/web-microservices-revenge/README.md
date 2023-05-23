@@ -24,9 +24,13 @@ routes = {
 ```
 - We need to identify potential attack vectors that can be exploited to forward our request to `http://rflagpage/flag`.
 - It seems that `http://rhomepage/` is vulnerable to Server-Side Template Injection (SSTI), as we can manipulate our `user` cookie to render malicious markup content, which is treated as safe HTML input.
+
 ![](solution/image1.png)
+
 - Another attack vector we discovered is SSTI in `http://radminpage/`, where we can inject malicious markup content by manipulating the `user` cookie, as there is no input sanitization before rendering.
+
 ![](solution/image2.png)
+
 - It is more promising to focus on the second attack vector, as we can attempt to leverage SSTI to achieve Server-Side Request Forgery (SSRF). The first attack vector primarily allows us to execute malicious client-side payloads, but it is unlikely to enable us to forward our request to `rflagpage`.
 - Since `radminpage` and `rflagpage` are in the same network, we aim to exploit the second SSTI vulnerability to make a request to `http://rflagpage/flag` via `radminpage`, retrieve its content, and then send it to our webhook by appending it.
 - However, there is a custom Web Application Firewall (WAF) method in the gateway called `is_sus()` that checks the `service` query parameter and the `user` cookie against a list of forbidden words.
