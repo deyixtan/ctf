@@ -1,3 +1,0 @@
-[submodule "tools/webhook"]
-	path = tools/webhook
-	url = https://github.com/deyixtan/webhook
