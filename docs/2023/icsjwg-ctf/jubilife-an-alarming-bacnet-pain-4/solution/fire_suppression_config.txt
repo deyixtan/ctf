@@ -1,0 +1,28 @@
+// Configuration File
+
+
+// object-name, ip-address, firmware-revision, application-software-version
+DEVICE
+{
+  CONFIG 1("fire-suppression", "10.120.50.12", "1.6.1", "5.4", "fire-suppression")
+}
+
+//object-name, setpoint, description, location, password 
+BINARY
+{
+  BINARY 1(  "HD-OF",   135.0, "Heat Detector - Office",      "Office",       "a3e0f5587d")
+  BINARY 2(  "HD-BR",   135.0, "Heat Detector - Break Room",  "Break Room",   "188c23496f")
+  BINARY 3(  "HD-LA",   135.0, "Heat Detector - Lab A",       "Lab A",        "83994245cc")
+  BINARY 4(  "HD-LB",   72.4,  "Heat Detector - Lab B",       "Lab B",        "927ab89245")
+  BINARY 5(  "HD-LC",   135.0, "Heat Detector - Lab C",       "Lab C",        "035a9a360d")
+  BINARY 6(  "SD-OF",   100.0, "Smoke Detector - Office",     "Office",       "113c17119a")
+  BINARY 7(  "SD-BR",   100.0, "Smoke Detector - Break Room", "Break Room",   "ddf5cd93ea")
+  BINARY 8(  "SD-LA",   100.0, "Smoke Detector - Lab A",      "Lab A",        "c4bb43f281")
+  BINARY 9(  "SD-LB",   100.0, "Smoke Detector - Lab B",      "Lab B",        "e1009ad76f")
+  BINARY 10( "SD-LC",   100.0, "Smoke Detector - Lab C",      "Lab C",        "8db63ca33c")
+  BINARY 11( "VENT-OF", 1,     "Ventilation - Office",        "Office",       "2ef6eb06e4")
+  BINARY 12( "VENT-BR", 1,     "Ventilation - Break Room",    "Break Room",   "9951f86bb7")
+  BINARY 13( "VENT-LA", 1,     "Ventilation - Lab A",         "Lab A",        "4bdc82fd9d")
+  BINARY 14( "VENT-LB", 1,     "Ventilation - Lab B",         "Lab B",        "f7b63ea4c3")
+  BINARY 15( "VENT-LC", 1,     "Ventilation - Lab C",         "Lab C",        "37ab38cb4f")
+}
